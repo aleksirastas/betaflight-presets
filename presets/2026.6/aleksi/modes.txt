@@ -1,0 +1,45 @@
+#$ TITLE: Aleksi15 TinyTrainer switches and endpoints
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: MODES
+#$ STATUS: COMMUNITY
+#$ AUTHOR: Aleksi15
+#$ KEYWORDS: Aleksi15, personal, racing, TinyTrainer, HDZero
+#$ PARSER: MARKED
+#$ DESCRIPTION: Replaces all AUX mode slots with the original TinyTrainer mapping.
+#$ DESCRIPTION: AUX1 high: ARM and BLACKBOX. AUX2 high: LAUNCH CONTROL.
+#$ DESCRIPTION: AUX3 middle: FLIP OVER AFTER CRASH; AUX3 high: BEEPER.
+#$ DESCRIPTION: AUX4 low/middle: LEDLOW. AUX4 high enables the LED strip.
+#$ DESCRIPTION: Also restores the four 988..2011 transmitter endpoint ranges used by this handset.
+#$ DESCRIPTION: Launch parameters, radio firmware, UARTs and receiver provider are retained.
+#$ WARNING: Replaces every existing AUX mode, including any PREARM, ANGLE or rescue mapping. Verify the physical radio switches with props removed.
+
+aux 0 0 0 900 900 0 0
+aux 1 0 0 900 900 0 0
+aux 2 0 0 900 900 0 0
+aux 3 0 0 900 900 0 0
+aux 4 0 0 900 900 0 0
+aux 5 0 0 900 900 0 0
+aux 6 0 0 900 900 0 0
+aux 7 0 0 900 900 0 0
+aux 8 0 0 900 900 0 0
+aux 9 0 0 900 900 0 0
+aux 10 0 0 900 900 0 0
+aux 11 0 0 900 900 0 0
+aux 12 0 0 900 900 0 0
+aux 13 0 0 900 900 0 0
+aux 14 0 0 900 900 0 0
+aux 15 0 0 900 900 0 0
+aux 16 0 0 900 900 0 0
+aux 17 0 0 900 900 0 0
+aux 18 0 0 900 900 0 0
+aux 19 0 0 900 900 0 0
+aux 0 0 0 1700 2100 0 0
+aux 1 13 2 1700 2100 0 0
+aux 2 15 3 900 1700 0 0
+aux 3 26 0 1700 2100 0 0
+aux 4 35 2 1300 1700 0 0
+aux 5 49 1 1700 2100 0 0
+rxrange 0 988 2011
+rxrange 1 988 2011
+rxrange 2 988 2011
+rxrange 3 988 2011

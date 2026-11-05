@@ -1,0 +1,82 @@
+#$ TITLE: Aleksi15 4 parallel LED strips - auto or event color
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: LEDS
+#$ STATUS: COMMUNITY
+#$ AUTHOR: Aleksi15
+#$ KEYWORDS: Aleksi15, personal, racing, TinyTrainer, HDZero
+#$ PARSER: MARKED
+#$ DESCRIPTION: Configures four logical WS2812 LEDs. Four parallel strips of four LEDs mirror these indices: 16 physical LEDs.
+#$ DESCRIPTION: Automatic mode follows the frequency reported by the VTX. Requires a communicating VTX and valid channel/frequency.
+#$ DESCRIPTION: Alternatively choose a fixed event-assigned color. Firmware frequency colors are not an FAI slot-color table.
+#$ DESCRIPTION: FAI F9U 2026 version 2 rule 1.6 specifies 32 physical RGB LEDs or 280mm diffused strip when that LED requirement applies.
+#$ DESCRIPTION: The 16-LED arrangement alone does not meet that physical-count requirement. LEDLOW and beeper/failsafe behavior still apply.
+#$ WARNING: Clears the existing strip layout. Four logical LEDs does not imply 32 physical LEDs. Check actual colors and event rules.
+
+feature LED_STRIP
+led 0 0,0::C:0
+led 1 0,0::C:0
+led 2 0,0::C:0
+led 3 0,0::C:0
+led 4 0,0::C:0
+led 5 0,0::C:0
+led 6 0,0::C:0
+led 7 0,0::C:0
+led 8 0,0::C:0
+led 9 0,0::C:0
+led 10 0,0::C:0
+led 11 0,0::C:0
+led 12 0,0::C:0
+led 13 0,0::C:0
+led 14 0,0::C:0
+led 15 0,0::C:0
+led 16 0,0::C:0
+led 17 0,0::C:0
+led 18 0,0::C:0
+led 19 0,0::C:0
+led 20 0,0::C:0
+led 21 0,0::C:0
+led 22 0,0::C:0
+led 23 0,0::C:0
+led 24 0,0::C:0
+led 25 0,0::C:0
+led 26 0,0::C:0
+led 27 0,0::C:0
+led 28 0,0::C:0
+led 29 0,0::C:0
+led 30 0,0::C:0
+led 31 0,0::C:0
+led 0 0,0::C:1
+led 1 1,0::C:1
+led 2 2,0::C:1
+led 3 3,0::C:1
+set ledstrip_profile = RACE
+set ledstrip_visual_beeper = OFF
+#$ OPTION_GROUP BEGIN (EXCLUSIVE): Color source
+#$ OPTION BEGIN (CHECKED): Automatic VTX frequency color
+set ledstrip_race_color = BLACK
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Fixed event color - BLUE
+color 10 240,0,255
+set ledstrip_race_color = BLUE
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Fixed event color - GREEN
+color 6 115,0,255
+set ledstrip_race_color = GREEN
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Fixed event color - RED
+color 2 0,0,255
+set ledstrip_race_color = RED
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Fixed event color - YELLOW
+color 4 50,0,255
+set ledstrip_race_color = YELLOW
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Fixed event color - CYAN
+color 8 180,0,255
+set ledstrip_race_color = CYAN
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Fixed event color - MAGENTA
+color 12 300,0,255
+set ledstrip_race_color = MAGENTA
+#$ OPTION END
+#$ OPTION_GROUP END

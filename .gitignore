@@ -1,0 +1,8 @@
+node_modules/
+*.bin
+*.bin.gz
+*.elf
+*.hex
+*private*
+*dump_all*
+*diff_all*

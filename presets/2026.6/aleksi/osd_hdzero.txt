@@ -1,0 +1,27 @@
+#$ TITLE: Aleksi15 TinyTrainer HDZero OSD
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ AUTHOR: Aleksi15
+#$ KEYWORDS: Aleksi15, personal, racing, TinyTrainer, HDZero
+#$ PARSER: MARKED
+#$ DESCRIPTION: Resets OSD element positions/visibility, then applies the original TinyTrainer layout.
+#$ DESCRIPTION: Preserves craft name, VTX settings, UARTs, display device, font configuration and battery warning thresholds.
+#$ DESCRIPTION: Requires a working HDZero MSP DisplayPort connection. Verify placement in powered goggles.
+
+defaults group_id 2045 nosave # OSD element positions only
+set osd_tim2 = 2577
+set osd_vbat_pos = 2052
+set osd_rssi_pos = 384
+set osd_link_quality_pos = 2596
+set osd_rssi_dbm_pos = 128
+set osd_tim_2_pos = 3075
+set osd_throttle_pos = 2564
+set osd_vtx_channel_pos = 3621
+set osd_craft_name_pos = 2584
+set osd_pilot_name_pos = 2613
+set osd_warnings_pos = 14613
+set osd_disarmed_pos = 2357
+set osd_stat_bitmask = 177700
+set osd_profile = 1
+set pilot_name = Aleksi15

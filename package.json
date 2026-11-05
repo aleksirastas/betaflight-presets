@@ -1,0 +1,9 @@
+{
+  "name": "aleksi-betaflight-presets",
+  "private": true,
+  "scripts": {
+    "index": "node indexer/indexer.js",
+    "check": "node indexer/check.js"
+  },
+  "license": "GPL-3.0"
+}

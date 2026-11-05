@@ -1,0 +1,14 @@
+#$ TITLE: Aleksi15 racing voltage and core temperature alarms
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ AUTHOR: Aleksi15
+#$ KEYWORDS: Aleksi15, personal, racing, TinyTrainer, HDZero
+#$ PARSER: MARKED
+#$ DESCRIPTION: Battery warning at 3.05V/cell and critical at 2.95V/cell, following the original TinyTrainer under-load racing thresholds.
+#$ DESCRIPTION: Applies to the currently selected battery profile. Core-temperature OSD alarm is 90C.
+#$ DESCRIPTION: Does not change voltage calibration, battery maximum voltage, or any motor setting.
+
+set vbat_warning_cell_voltage = 305
+set vbat_min_cell_voltage = 295
+set osd_core_temp_alarm = 90

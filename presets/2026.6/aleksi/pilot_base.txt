@@ -1,0 +1,26 @@
+#$ TITLE: Aleksi15 pilot base - rates, switches, HDZero, LEDs
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ AUTHOR: Aleksi15
+#$ KEYWORDS: Aleksi15, personal, racing, TinyTrainer, HDZero
+#$ PARSER: MARKED
+#$ DESCRIPTION: Personal preferences assembled from Aleksi15 reference configurations.
+#$ DESCRIPTION: Select only the components needed. No PID tune, filters, board alignment, motor map, UART or battery profile is supplied.
+#$ DESCRIPTION: Take an aircraft backup before applying. This preset is not a complete flight-ready aircraft configuration.
+
+#$ OPTION BEGIN (CHECKED): Rates
+#$ INCLUDE: presets/aleksi/rates.txt
+#$ OPTION END
+#$ OPTION BEGIN (CHECKED): Modes and handset endpoints
+#$ INCLUDE: presets/2026.6/aleksi/modes.txt
+#$ OPTION END
+#$ OPTION BEGIN (CHECKED): HDZero OSD
+#$ INCLUDE: presets/2026.6/aleksi/osd_hdzero.txt
+#$ OPTION END
+#$ OPTION BEGIN (CHECKED): Four parallel LED strips
+#$ INCLUDE: presets/2026.6/aleksi/leds_4_parallel.txt
+#$ OPTION END
+#$ OPTION BEGIN (CHECKED): Racing battery and temperature alarms
+#$ INCLUDE: presets/2026.6/aleksi/alarms.txt
+#$ OPTION END
